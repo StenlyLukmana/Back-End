@@ -28,7 +28,7 @@
                             @foreach($items as $item)
                             <tr>
                                 <td>{{$loop->iteration}}</td>
-                                <td><img src="{{asset('storage/Image/'.$item->image)}}" alt="{{ $item->name }}" style="height: 90px"></td>
+                                <td><img src="{{ asset('storage/item_images/'.$item->image) }}" alt="{{ $item->name }}" style="height: 90px"></td>
                                 <td>{{$item->name}}</td>
                                 <td>Rp.{{ number_format($item->price, 2, ',', '.') }}</td>
                                 <td>{{$item->quantity}}</td>
